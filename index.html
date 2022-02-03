@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Device»</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!---------------- Шапка сайта ----------------->
@@ -57,92 +59,87 @@
         <h2 class="visually-hidden">Популярные товары.</h2>
         <ul class="promo-slider">
           <li class="promo-slider-item">
-            <img class="promo-slider-image" src="images/promo/promo-1.png" alt="Квадрокоптер.">
+            <div class="promo-image-block">
+              <img class="promo-slider-image" src="images/promo/promo-1.png" alt="Квадрокоптер.">
+            </div>
+            <div class="promo-description">
+              <h3 class="visually-hidden">Квадрокоптер с лазером.</h3>
+              <p class="promo-description-text">
+                <b class="promo-description-dedicated">Порхает как бабочка,<br>жалит как пчела!</b>
+                <span class="promo-description-main">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                  мощным лазером, замаскированным под стандартную камеру.</span>
+              </p>
+              <a class="promo-details-link styled-link" href="#">Подробнее</a>
+              <ul class="promo-characteristics">
+                <li class="promo-characteristics-item">
+                  <b class="promo-characteristic-value">800 м</b>
+                  <span class="promo-characteristic-name">Дальность полета</span>
+                </li>
+                <li class="promo-characteristics-item">
+                  <b class="promo-characteristic-value">50 м</b>
+                  <span class="promo-characteristic-name">Радиус поражения</span>
+                </li>
+              </ul>
+            </div>
           </li>
+
           <li class="promo-slider-item">
-            <img class="promo-slider-image" src="images/promo/promo-2.png" alt="Фитнес-браслет.">
+            <div class="promo-image-block">
+              <img class="promo-slider-image" src="images/promo/promo-2.png" alt="Фитнес-браслет.">
+            </div>
+            <div class="promo-description">
+              <h3 class="visually-hidden">Мотивирующие фитнес-браслеты.</h3>
+              <p class="promo-description-text">
+                <b class="promo-description-dedicated">Худеем<br>правильно!</b>
+                <span class="promo-description-main">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                  не пропускать занятия и соблюдать диету.</span>
+              </p>
+              <a class="promo-details-link styled-link" href="#">Подробнее</a>
+              <ul class="promo-characteristics">
+                <li class="promo-characteristics-item">
+                  <b class="promo-characteristic-value">48 часов</b>
+                  <span class="promo-characteristic-name">Без подзарядки</span>
+                </li>
+              </ul>
+            </div>
           </li>
+
           <li class="promo-slider-item">
-            <img class="promo-slider-image" src="images/promo/promo-3.png" alt="Селфи-палка.">
+            <div class="promo-image-block">
+              <img class="promo-slider-image" src="images/promo/promo-3.png" alt="Селфи-палка.">
+            </div>
+            <div class="promo-description">
+              <h3 class="visually-hidden">Самая длинная селфи-палка.</h3>
+              <p class="promo-description-text">
+                <b class="promo-description-dedicated">Делай селфи,<br>как Бен Стиллер!</b>
+                <span class="promo-description-main">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</span>
+              </p>
+              <a class="promo-details-link styled-link" href="#">Подробнее</a>
+              <ul class="promo-characteristics">
+                <li class="promo-characteristics-item">
+                  <b class="promo-characteristic-value">8,5 м</b>
+                  <span class="promo-characteristic-name">Длина палки</span>
+                </li>
+                <li class="promo-characteristics-item">
+                  <b class="promo-characteristic-value">5 кг</b>
+                  <span class="promo-characteristic-name">Вес палки</span>
+                </li>
+                <li class="promo-characteristics-item">
+                  <b class="promo-characteristic-value">Карбон</b>
+                  <span class="promo-characteristic-name">Материал</span>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
 
-        <ul class="promo-description">
-          <li class="promo-description-item">
-            <h3 class="visually-hidden">Квадрокоптер с лазером.</h3>
-            <p class="promo-description-text">
-              <b class="promo-description-dedicated">Порхает как бабочка, жалит как пчела!</b>
-              <span class="promo-description-main">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span>
-            </p>
-            <a class="promo-details-link styled-link" href="#">Подробнее</a>
-            <button class="promo-slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар.</span>
-            </button>
-            <button class="promo-slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар.</span>
-            </button>
-            <ul class="promo-characteristics">
-              <li class="promo-characteristics-item">
-                <b class="promo-characteristic-value">800 м</b>
-                <span class="promo-characteristic-name">Дальность полета</span>
-              </li>
-              <li class="promo-characteristics-item">
-                <b class="promo-characteristic-value">50 м</b>
-                <span class="promo-characteristic-name">Радиус поражения</span>
-              </li>
-            </ul>
-          </li>
-
-          <li class="promo-description-item">
-            <h3 class="visually-hidden">Мотивирующие фитнес-браслеты.</h3>
-            <p class="promo-description-text">
-              <b class="promo-description-dedicated">Худеем<br>правильно!</b>
-              <span class="promo-description-main">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span>
-            </p>
-            <a class="promo-details-link styled-link" href="#">Подробнее</a>
-            <button class="promo-slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар.</span>
-            </button>
-            <button class="promo-slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар.</span>
-            </button>
-            <ul class="promo-characteristics">
-              <li class="promo-characteristics-item">
-                <b class="promo-characteristic-value">48 часов</b>
-                <span class="promo-characteristic-name">Без подзарядки</span>
-              </li>
-            </ul>
-          </li>
-
-          <li class="promo-description-item">
-            <h3 class="visually-hidden">Самая длинная селфи-палка.</h3>
-            <p class="promo-description-text">
-              <b class="promo-description-dedicated">Делай селфи,<br>как Бен Стиллер!</b>
-              <span class="promo-description-main">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</span>
-            </p>
-            <a class="promo-details-link styled-link" href="#">Подробнее</a>
-            <button class="promo-slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар.</span>
-            </button>
-            <button class="promo-slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар.</span>
-            </button>
-            <ul class="promo-characteristics">
-              <li class="promo-characteristics-item">
-                <b class="promo-characteristic-value">8,5 м</b>
-                <span class="promo-characteristic-name">Длина палки</span>
-              </li>
-              <li class="promo-characteristics-item">
-                <b class="promo-characteristic-value">5 кг</b>
-                <span class="promo-characteristic-name">Вес палки</span>
-              </li>
-              <li class="promo-characteristics-item">
-                <b class="promo-characteristic-value">Карбон</b>
-                <span class="promo-characteristic-name">Материал</span>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <button class="promo-slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущий товар.</span>
+        </button>
+        <button class="promo-slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующий товар.</span>
+        </button>
 
         <ol class="promo-slider-pagination">
           <li class="promo-slider-pagination-item">
@@ -168,10 +165,10 @@
         <h2 class="visually-hidden">Категории товаров.</h2>
         <ul class="products-categories-list">
           <li class="products-categories-item">
-            <a class="products-categories-link" href="#">Виртуальная реальность</a>
+            <a class="products-categories-link" href="#">Виртуальная<br>реальность</a>
           </li>
           <li class="products-categories-item">
-            <a class="products-categories-link" href="#">Моноподы для селфи</a>
+            <a class="products-categories-link" href="#">Моноподы<br>для селфи</a>
           </li>
           <li class="products-categories-item">
             <a class="products-categories-link" href="#">Экшн-камеры</a>
@@ -222,15 +219,12 @@
               условия кредита. Выгодные для банка, разумеется.</p>
           </li>
         </div>
-
-        <div class="delivery-offer">
-          <a class="delivery-offer-button" href="#">
-            <span class="visually-hidden">Заказать доставку.</span>
-          </a>
-          <strong class="delivery-offer-text">Доставим редкий товар под заказ</strong>
-        </div>
       </section>
       <!-----------    /Сервисы   ----------->
+
+      <div class="delivery-offer">
+        <strong class="delivery-offer-text">Доставим редкий товар под заказ</strong>
+      </div>
 
       <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
@@ -272,9 +266,10 @@
       </section>
 
       <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,
-          длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        <h2 class="newsletter-title">Подпишитесь<br>на рассылку</h2>
+        <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br>
+          длительными тест-драйвами, распаковками, а также акции,<br>
+          спецпредложения и вот это вот всё.</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email">Email</label>
             <input class="newsletter-email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
@@ -291,7 +286,7 @@
         <h2 class="visually-hidden">Наш адрес.</h2>
         <img class="footer-address-logo" src="images/footer-logo.svg" width="145" height="36" alt="Логотип интернет-магазина «Device».">
         <address class="footer-address-text">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.
         </address>
       </section>
 
