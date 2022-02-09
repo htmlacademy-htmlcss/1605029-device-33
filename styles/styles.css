@@ -86,6 +86,7 @@ body {
 
 /* --- Навигация --- */
 .header-navigation {
+  bottom: 38px;
   width: 1040px;
   margin: 0 auto;
 }
