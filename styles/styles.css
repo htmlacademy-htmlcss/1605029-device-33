@@ -1710,11 +1710,17 @@ body {
   background-color: #ffe17f;
 }
 
+.product-card-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .product-card-link:hover .product-card-title {
   opacity: 0.6;
 }
 
-.product-card-link:hover .product-card-detailed-wrapper {
+.product-card-link:hover .product-card-detailed-wrapper,
+.product-card-link:active .product-card-detailed-wrapper {
   display: flex;
 }
 
@@ -1725,24 +1731,6 @@ body {
 
 .product-card-link:active .product-card-detailed-inner::after {
   background-color: rgba(255, 199, 0, 1)
-}
-
-.product-card-link:active .product-card-detailed-wrapper {
-  display: flex;
-}
-
-.product-card-link:active .product-card-title,
-.product-card-link:active .product-card-price {
-  opacity: 1;
-}
-
-.product-card-link:active .product-card-detailed-wrapper {
-  display: none;
-}
-
-.product-card-link:active {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
 }
 
 /* --- Пагинация ---*/
