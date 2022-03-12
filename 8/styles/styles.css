@@ -127,6 +127,13 @@ body {
 
 /* --- Header --- */
 .page-header {
+  min-width: 1160px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+
+.page-header-container {
   width: 1160px;
   min-height: 186px;
   margin: 40px auto 0 auto;
@@ -509,12 +516,15 @@ body {
 }
 
 /* --- Промо-блок --- */
+
 .promo {
   position: relative;
   top: -40px;
   box-sizing: border-box;
-  width: 1160px;
+  width: 1240px;
   margin: 0 auto 34px auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .promo-slider {
@@ -625,10 +635,10 @@ body {
 .promo-slider-controls {
   position: absolute;
   top: 210px;
-  left: 0;
+  left: 70px;
   display: flex;
   justify-content: space-between;
-  width: 560px;
+  width: 530px;
 }
 
 .promo-slider-button {
@@ -673,7 +683,7 @@ body {
 /* --- Промо-блок. Пагинация --- */
 .promo-slider-pagination {
   position: absolute;
-  right: 0px;
+  right: 40px;
   bottom: 170px;
   display: flex;
   align-items: center;
@@ -743,6 +753,8 @@ body {
 .products-categories {
   width: 1160px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .products-categories-list {
@@ -846,6 +858,8 @@ body {
 .services {
   min-width: 1160px;
   height: 289px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #f0f0f0;
 }
 
@@ -992,6 +1006,12 @@ body {
 }
 
 /* --- Доставка под заказ --- */
+.delivery-offer-container {
+  min-width: 1160px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .delivery-offer {
   position: relative;
   display: flex;
@@ -1084,6 +1104,8 @@ body {
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto 70px auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .about-us p,
@@ -1185,6 +1207,8 @@ body {
 .newsletter {
   min-width: 1160px;
   margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #f0f0f0;
 }
 
@@ -1312,6 +1336,8 @@ body {
 /* --- Footer --- */
 .page-footer {
   min-width: 1160px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-size: 16px;
   color: #ffffff;
   background-color: #444444;
@@ -1943,10 +1969,10 @@ span.order-count-label {
 }
 
 .inner-header {
-  width: 1160px;
+  width: 1240px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 35px 0 35px 60px;
+  padding: 35px 40px 35px 100px;
 }
 
 /* --- Главный заголовок ---*/
@@ -2008,6 +2034,8 @@ span.order-count-label {
 .catalog-products {
   display: flex;
   min-width: 1160px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: #f0f0f0
 }
 
