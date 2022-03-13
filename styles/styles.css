@@ -176,12 +176,13 @@ body {
 .header-search-form {
   display: flex;
   width: 517px;
+  margin-right: 26px;
+  margin-bottom: auto;
 }
 
 .search-field,
 .search-button {
   box-sizing: border-box;
-  height: 40px;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -192,6 +193,7 @@ body {
 .search-field {
   position: relative;
   flex-grow: 1;
+  height: 40px;
   padding: 10px 16px 10px 48px;
   color: inherit;
   border-right: none;
@@ -211,7 +213,7 @@ body {
 }
 
 .search-button {
-  width: 160px;
+  min-width: 160px;
   text-align: center;
   border-radius: 0 50px 50px 0;
   cursor: pointer;
@@ -245,7 +247,6 @@ body {
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   align-content: center;
   width: 496px;
   margin: 0;
@@ -335,8 +336,11 @@ body {
   display: flex;
   align-items: center;
   align-self: center;
+  box-sizing: border-box;
+  min-width: 293px;
+  margin-right: auto;
   padding: 15px 66px 15px 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .catalog-submenu-open-button::after,
@@ -416,9 +420,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  width: 700px;
+  flex-grow: 1;
   margin: 0;
-  margin-left: auto;
+  margin-left: 26px;
   padding: 0;
   z-index: 2;
   list-style-type: none;
@@ -686,7 +690,9 @@ body {
   right: 40px;
   bottom: 170px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  max-width: 228px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -857,10 +863,10 @@ body {
 /* --- Сервисы --- */
 .services {
   min-width: 1160px;
-  height: 289px;
   padding-left: 40px;
   padding-right: 40px;
   background-color: #f0f0f0;
+  background-position-y: 100px;
 }
 
 .services-container {
@@ -877,7 +883,9 @@ body {
   box-sizing: border-box;
   margin: 0;
   margin-right: 116px;
-  padding: 64px 0;
+  padding: 0;
+  padding-top: 64px;
+  padding-bottom: 35px;
   list-style-type: none;
 }
 
@@ -889,9 +897,9 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  bottom: -30px;
   display: block;
   width: 7px;
-  height: 100%;
   content: "";
   background-color: #000000;
 }
@@ -1016,21 +1024,16 @@ body {
   position: relative;
   display: flex;
   width: 1160px;
-  height: 100px;
+  min-height: 100px;
   margin: 70px auto;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
   color: #000000;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
   background-color: #f0f0f0;
 }
 
 .delivery-offer-left-icon {
   width: 125px;
+  min-width: 125px;
   background-color: #ffe17f;
   background-image: url("../images/icons/delivery-car.svg");
   background-repeat: no-repeat;
@@ -1040,12 +1043,19 @@ body {
 
 .delivery-offer-text {
   margin: auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .delivery-offer-right-icon {
   position: relative;
   width: 40px;
+  min-width: 40px;
   height: 40px;
   margin: auto 42px;
   border-radius: 50%;
@@ -1240,7 +1250,8 @@ body {
 }
 
 .newsletter-email {
-  width: 557px;
+  flex-grow: 1;
+  /*width: 557px;*/
   height: 55px;
   box-sizing: border-box;
   padding: 11px 16px;
@@ -1272,7 +1283,8 @@ body {
 }
 
 .newsletter-button {
-  height: 55px;
+  min-width: 253px;
+  min-height: 55px;
   box-sizing: border-box;
   padding-right: 39px;
   padding-left: 39px;
@@ -1427,6 +1439,7 @@ body {
 
 .footer-navigation-link {
   position: relative;
+  display: block;
   text-decoration: none;
 }
 
@@ -2086,6 +2099,10 @@ span.order-count-label {
 }
 
 /* --- Range-slider ---*/
+.range {
+  margin-bottom: 35px;
+}
+
 .range-scale {
   position: relative;
   width: 200px;
@@ -2148,13 +2165,13 @@ span.order-count-label {
 
 .range-wrapper-inputs-outer {
   position: relative;
-  height: 22px;
 }
 
 .range-wrapper-inputs-inner {
   position: absolute;
   display: flex;
   justify-content: space-between;
+  max-height: 48px;
 }
 
 .catalog-filters-label {
@@ -2335,7 +2352,7 @@ span.order-count-label {
 .sorting-container {
   display: flex;
   align-items: center;
-  height: 70px;
+  min-height: 70px;
   margin-bottom: 70px;
   padding-right: 40px;
   padding-left: 40px;
@@ -2343,7 +2360,7 @@ span.order-count-label {
 }
 
 .sorting-container-subtitle {
-  margin-right: 197px;
+  margin-right: auto;
 }
 
 /* --- Список сортировки ---*/
@@ -2352,6 +2369,8 @@ span.order-count-label {
   display: flex;
   align-items: center;
   width: 159px;
+  min-width: 159px;
+  margin-right: auto;
 }
 
 .select-control {
@@ -2388,13 +2407,9 @@ span.order-count-label {
 
 .button-sort {
   position: relative;
-  width: 30px;
-  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
   color: #000000;
-}
-
-.sorting-up {
-  margin-left: auto;
 }
 
 .sorting-up::before,
@@ -2600,6 +2615,7 @@ span.order-count-label {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   width: 760px;
   margin: 0 auto;
   padding: 0;
@@ -2655,8 +2671,8 @@ span.order-count-label {
 
 .pagination-link {
   display: flex;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   margin: auto;
   font-size: 16px;
   line-height: 20px;
