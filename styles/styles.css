@@ -1415,14 +1415,13 @@ body {
 
 /* --- Footer: навигация и соц. сети --- */
 .footer-navigation-and-social {
-  margin: 137px 190px 61px 0;
+  margin: 137px 0 61px 0;
 }
 
 .footer-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 444px;
+  max-width: 522px;
   margin: 0;
   margin-bottom: 47px;
   padding: 0;
@@ -1430,8 +1429,10 @@ body {
 }
 
 .footer-navigation-item {
+  margin-right: 31px;
   margin-bottom: 15px;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -1482,6 +1483,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 444px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1490,9 +1492,15 @@ body {
 .footer-social-item {
   width: 40px;
   height: 40px;
-  margin-right: 7.5px;
-  margin-bottom: 15px;
-  margin-left: 7.5px;
+  margin: 0 8px 15px 8px;
+}
+
+.footer-social-item:first-child {
+  margin-left: 0;
+}
+
+.footer-social-item:last-child {
+  margin-right: 0; 
 }
 
 .footer-social-link {
@@ -1552,8 +1560,7 @@ body {
 /* --- Footer: телефон и логотип Академии --- */
 .footer-phone {
   width: 175px;
-  margin-top: 140px;
-  margin-bottom: 65px;
+  margin: 140px 0 65px auto;
 }
 
 .footer-phone-link {
@@ -1985,7 +1992,7 @@ span.order-count-label {
   width: 1240px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 35px 40px 35px 100px;
+  padding: 35px 40px 25px 100px;
 }
 
 /* --- Главный заголовок ---*/
@@ -2000,9 +2007,14 @@ span.order-count-label {
 /* --- Хлебные крошки ---*/
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.breadcrumbs-item {
+  margin-bottom: 10px;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -2331,6 +2343,7 @@ span.order-count-label {
 /* --- Кнопка отправки ---*/
 .catalog-filters-button {
   margin-top: 35px;
+  margin-bottom: 35px;
   padding-left: 50px;
   padding-right: 50px;
   font-family: "Raleway", sans-serif;
