@@ -2070,7 +2070,7 @@ span.order-count-label {
 }
 
 .catalog-products-subtitle {
-  margin: 26px 0;
+  margin: 25px 0 27px 0;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -2087,7 +2087,7 @@ span.order-count-label {
 }
 
 .catalog-filters {
-  margin-top: 60px;
+  margin-top: 58px;
 }
 
 .catalog-filters-group {
@@ -2100,7 +2100,7 @@ span.order-count-label {
 .catalog-filters-title {
   display: block;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-top: 12px;
   padding-left: 0;
   font-size: 18px;
@@ -2116,8 +2116,12 @@ span.order-count-label {
 }
 
 /* --- Range-slider ---*/
+.range-title {
+  margin-bottom: 27px;
+}
+
 .range {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .range-scale {
@@ -2235,7 +2239,7 @@ span.order-count-label {
 
 /* --- Чекбоксы ---*/
 .filters-checkbox-item:not(:last-child) {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .control {
@@ -2347,10 +2351,10 @@ span.order-count-label {
 
 /* --- Кнопка отправки ---*/
 .catalog-filters-button {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  padding-right: 46px;
+  padding-left: 50px;  
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -2469,7 +2473,7 @@ span.order-count-label {
   grid-template-columns: repeat(2, 360px);
   gap: 44px 40px;
   width: 760px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 42px auto;
   padding: 0;
   list-style-type: none;
 }
