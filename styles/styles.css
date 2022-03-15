@@ -1693,7 +1693,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 160px);
   gap: 42px 40px;
-
 }
 
 .modal-title {
