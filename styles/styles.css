@@ -969,6 +969,7 @@ img {
   box-sizing: border-box;
   width: 696px;
   padding-top: 71px;
+  padding-right: 236px;
 }
 
 .services-delivery::after {
